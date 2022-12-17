@@ -6,7 +6,7 @@
 /*   By: hsliu <hsliu@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 00:18:06 by hsliu             #+#    #+#             */
-/*   Updated: 2022/12/06 10:44:00 by hsliu            ###   ########lyon.fr   */
+/*   Updated: 2022/12/17 16:23:22 by hsliu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ static size_t	ft_trimlen(char const *s1, char const *set)
 		head++;
 		trim++;
 	}
-	while (tail >= 0 && ft_strchr(set, s1[tail]))
+	while (tail >= head && ft_strchr(set, s1[tail]))
 	{
 		tail--;
 		trim++;
